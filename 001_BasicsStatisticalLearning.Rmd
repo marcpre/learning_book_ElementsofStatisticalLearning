@@ -1,0 +1,37 @@
+---
+title: "Basics of Statistical Learning"
+output: html_notebook
+---
+
+# What is statistical learning?
+
+For given input varibales - can also be named predictors, independent variables, features - output variables - also named response or dependant variable and typically denoted using the symbol $Y$.
+
+$$Y = f(X) + \epsilon$$
+$f$ is the unknown function of $X_1, ..., X_n$ and $\epsilon$ is the error term, which is independent of $X$ and has the mean $0$.
+
+## Why estimate $f$
+
+There are two main reasons: $inference$ and $prediction$:
+
+### Prediction
+
+In case we have a set of inputs, such as $X$ available, and want to estimate the output $Y$, $f$ is not that important to use as long is predicts the right $Y$.
+
+However, the accuracy of the predictions depends on two quantities:
+
+* Reducible Error --> This error can be reduced by using better statistical techniques
+* Irreducible Error --> Is always there!
+
+The irreducible error cannot be reduced als $Y = f(X) + \epsilon$, whereas $\epsilon$ may contain unmeasured variables that are useful for predicting $Y$.(That's why it is also never $0$!)
+
+
+### Inference
+
+--> Page 19
+
+
+
+```{r}
+plot(cars)
+```
