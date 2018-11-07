@@ -28,10 +28,13 @@ The irreducible error cannot be reduced als $Y = f(X) + \epsilon$, whereas $\eps
 
 ### Inference
 
---> Page 19
+Focuses on the way that $Y$ is affected as $X_1,...,X_p$ changes.
+
+
+### How can $f$ be estimated?
 
 
 
 ```{r}
-plot(cars)
+# plot(cars)
 ```
