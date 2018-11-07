@@ -33,7 +33,31 @@ Focuses on the way that $Y$ is affected as $X_1,...,X_p$ changes.
 
 ### How can $f$ be estimated?
 
+There are two types, linear and non-linear approaches.
 
+#### Parametric Methods
+
+1. First we make an assumption about the function and form. F.ex.: If $f$ is linear.
+2. Secondly, we try to estimate the coefficience - parameters - f.ex.: using ordinary least squared
+
+#### Non-Parametric Methods
+Do not make an assumption about $f$ beforehand, but try to estimate $f$ as close to the data points as possible. 
+
+### Trade-Off between Accuracy and Model Interpretability
+Some models are less flexible, that means they can only produce a relatively small range of shapes for $f$.
+
+#### Why would we ever chooose to use a more restrictive method instead?
+F.ex.: if we are mainly interested in inference then these models are better as they aer more interpretable. 
+
+However, it is often the case that linear models, that seem to be less accurate, provide a higher degree of accuracy to obtain forecasts.
+
+## Supervised vs. Unsupervised Learning
+
+### Supervised
+
+### Unsupervised
+
+---> Stopped at 26
 
 ```{r}
 # plot(cars)
