@@ -55,10 +55,34 @@ However, it is often the case that linear models, that seem to be less accurate,
 
 ### Supervised
 
+For each observation such as $x_i, i=1,...,n$ there is an associated responds $y_i$. We basically learn the "mapping" function from the input to the output.
+
+The clear goal is to estimate the mapping function so well, that we can predict the output if we only have inputs.
+
 ### Unsupervised
+
+Unsupervised learning is if we only have input variables, but no output variables accordingly. 
+
+One goal of unsupervised learning is to model the underlying distribution of the data to learn more about the input variables.
+
+The difference between unsupervised and supervised learning is that, within supervised learning there is a "teacher" and within unsupervised learning not. Hence, there is no correct answer in unsupervised learning.
+
+### Semi-Supervised 
+
+We have only some input with corresponding output varibales. One reason might be that some output variables are too "expensive" to collect. 
+
+## Regerssion vs. Classification
+
+Variables van either be quanitative or qualitative(also known as categorical). Quantitative variables take a numerical value, qualitative variables take on a value in one of K different classes, or categories.  
+
+
 
 ---> Stopped at 26
 
 ```{r}
 # plot(cars)
 ```
+
+
+
+
