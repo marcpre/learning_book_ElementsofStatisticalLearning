@@ -73,11 +73,18 @@ We have only some input with corresponding output varibales. One reason might be
 
 ## Regerssion vs. Classification
 
-Variables van either be quanitative or qualitative(also known as categorical). Quantitative variables take a numerical value, qualitative variables take on a value in one of K different classes, or categories.  
+Variables van either be quanitative or qualitative(also known as categorical). Quantitative variables take a numerical value, qualitative variables take on a value in one of K different classes, or categories. 
+
+*Regression problems* are using onla real - quantitative - values, while those involving qualitative values are referred to as *classification problems*. 
+
+# Accuracy
+
+## MSE (Mean Squared Error)
+
+For regression problems we can use the MSE(mean squared error).
 
 
-
----> Stopped at 26
+---> Stopped at 34
 
 ```{r}
 # plot(cars)
