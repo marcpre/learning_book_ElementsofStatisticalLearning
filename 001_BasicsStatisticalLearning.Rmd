@@ -83,13 +83,31 @@ Variables van either be quanitative or qualitative(also known as categorical). Q
 
 For regression problems we can use the MSE(mean squared error).
 
+### Interpretation
+
+An MSE of zero, meaning that the estimator predicts observations of the parameter $\theta$  with perfect accuracy. This is the ideal, but is typically not possible.
+
+
+## The Bias-Variance Trade-Off
+
+The expected test MSE for a given $x_0$, can always be decomposed into the sum of three fundamental quantities: the variance of $f(x_0)$, the square bias of $f(x_0)$ and the variance of the error term $\epsilon$.
+
+Whenever accuracy of a model is discussed, it's important to understand prediction errors (bias and variance). However, there is a trade-off between minimizing a model's bias and variance. 
+
+### What is a bias?
+
+Bias is the difference between the average prediction of our model and the correct value which we are trying to predict. The model is basically underfittet.
+
+![Bias-Variance Trade-Off](https://cdn-images-1.medium.com/max/1600/1*9hPX9pAO3jqLrzt0IE3JzA.png)
+
+
+
+
 
 ---> Stopped at 34
 
 ```{r}
 # plot(cars)
 ```
-
-
 
 
