@@ -100,6 +100,14 @@ Bias is the difference between the average prediction of our model and the corre
 
 ![Bias-Variance Trade-Off](https://cdn-images-1.medium.com/max/1600/1*9hPX9pAO3jqLrzt0IE3JzA.png)
 
+## Classification Setting
+
+The most common approach for classifying $f$ is the training **error rate**, the proportion of mistakes that we apply our estimate $f$ for the training observation.
+
+A good classifier is one for which the test error is smallest. This can be generalized into the Bayes Classifier.
+
+An algorithm that applies Bayes Classifier is KNN. KNN works the following way. It looks in its neighbourhood for data points and classifies them properly. If there is a larger conditional probability that one or the other classifier is stronger, the "neighbourhood" is classified accordingly.
+
 
 
 
