@@ -110,12 +110,3 @@ An algorithm that applies Bayes Classifier is KNN. KNN works the following way. 
 
 
 
-
-
----> Stopped at 34
-
-```{r}
-# plot(cars)
-```
-
-

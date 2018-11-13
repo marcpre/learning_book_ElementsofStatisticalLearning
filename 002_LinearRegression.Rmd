@@ -1,0 +1,20 @@
+---
+title: "002_LinearRegression"
+output: html_document
+---
+
+# simple Linear Regression
+Simple concept for predicting a quantitative response $Y$ on the basis of a single predictor variable $X$. It assumes that there is a linear relationship between $X$ and $Y$.
+
+$$
+Y \approx \beta_0 + \beta_1X
+$$
+
+## Estimating the coefficients
+
+By minimizing the residuals via the least square approach we can fit the line properly. 
+
+
+
+
+---> Stopped at 63
