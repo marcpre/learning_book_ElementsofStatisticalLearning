@@ -14,6 +14,12 @@ $$
 
 By minimizing the residuals via the least square approach we can fit the line properly. 
 
+### Assessing the Accuracy of the Coefficient Estimates
+
+We can use the standart error to compute how far off the average of the model is away from the true value. The standart error can also be used to compute confidence intervals. 
+
+#### p-value
+The p-value is interpreted as the following: That it is unlikely to observe a substantial association between the predictor and the response. Hence, a small p-value says that we can infer that there is a relationship between the predictor and the response.
 
 
 

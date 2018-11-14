@@ -110,3 +110,4 @@ An algorithm that applies Bayes Classifier is KNN. KNN works the following way. 
 
 
 
+
