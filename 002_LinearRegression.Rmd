@@ -22,5 +22,27 @@ We can use the standart error to compute how far off the average of the model is
 The p-value is interpreted as the following: That it is unlikely to observe a substantial association between the predictor and the response. Hence, a small p-value says that we can infer that there is a relationship between the predictor and the response.
 
 
+## Model Accuracy
 
----> Stopped at 63
+By measuring accuracy we want to find out how much the model fits the underlying data.
+
+### Residual Standard Error
+
+The RSE is considered a measure of the lack of fit of the model to the data. If the RSE is large it indicates that the model might NOT fit to the underlying data.
+
+### R^2 Statistic
+
+R^2 describes a proportion - the proportion of variance explained. It is a value between 0 and 1. R^2 has an interpretation advantage over RSE. 
+
+  1. Its value is between 0 and 1
+  2. It shows the strength of the linear relationship in the data. It is a measure of the linear relationship between X and Y.
+
+
+# Multiple Linear Regression
+
+
+
+
+
+
+#### ---> Stopped at 71
