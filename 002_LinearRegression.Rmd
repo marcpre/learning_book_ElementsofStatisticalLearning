@@ -40,6 +40,20 @@ R^2 describes a proportion - the proportion of variance explained. It is a value
 
 # Multiple Linear Regression
 
+Simply said a multiple linear regression can be represented as trying multiple linear regressions against 1 predictor. 
+
+Multiple Linear regression can be represented as,
+
+$$
+Y = \beta_0 + \beta_1X_1 + \beta_2X_2 + ... + \beta_pX_p +  \epsilon
+$$
+
+## Estimate Regression Coefficients
+
+We can use similarly to the linear regression the "least squared"-method, to minimize the sum of of squared results.
+
+
+
 
 
 
