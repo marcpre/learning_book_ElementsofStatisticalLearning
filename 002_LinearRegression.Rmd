@@ -53,10 +53,25 @@ $$
 We can use similarly to the linear regression the "least squared"-method, to minimize the sum of of squared results.
 
 
+## Important Questions
+
+  1. Is at least one predictor useful in predicting a response?
+  2. Is only a subset of predictors useful or are all predictors useful?
+  3. How well does the model fit the data?
+  4. Given a set of response values, what response should we predict and how accurate is our prediction?
+
+### 1. Test the $H_0$-Hypotheses
+
+The first step is to use a F-Statistic and compute a p-value to test the significane of the $H_0$-Hypotheses. 
+  
+### 2. Decide on the most important variables
+
+Using variable selection, we can see which variable has the highest impact on the model. Ideally we would like to try any number of combination to select a variable. 
+
+  * *Forward Selection:* We start with the null model - the model that contains an intercept, but no predictors. As a next step we fit p simple linear regression and add to the null model the variables that result in the lowest RSS. 
+  * *Backward Selection:* We start with all variables in the model and remove the variable with the greatest p-value. This procedure is continued and we stop it when we approach a certain threshold.
+  * *Mixed Selection:* This is a mix of the two models above. We start with forward selection and then take gradually variables away. We stop when we are at a certain threshold.
+  
 
 
-
-
-
-
-#### ---> Stopped at 71
+#### ---> Stopped at 79
