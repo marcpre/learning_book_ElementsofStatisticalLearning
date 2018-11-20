@@ -76,8 +76,18 @@ Using variable selection, we can see which variable has the highest impact on th
 Using $R^2$ and $RSE$ we can detemine the model fit. Some properties are:
 
 1. $R^2$ equals the $Cor(Y, \hat{Y})$
+2. $R^2$ close to 1 indicates that the model explains a large portion of the variance in the response variable.
+3. $R^2$ usually decreases if more predictors are added to the model
+
+### 4. Predictions
+ 
+Making predictions in the model, we use simply the estimated coefficients. However, there are three uncertainties associated with the prediction:
+
+1. Reducible error - We can compute confidence intervals to see how "confident" we can be about the coefficients
+2. In practice fitting a linear model is always trying to fit reality. Hence, there is also the model bias.
+3. Irreducible error - Even if we knew the true value, we cannot be absolutely certain, because there is still the irreducible error - $\epsilon$.
 
 
 
 
-#### ---> Stopped at 79
+#### ---> Stopped at 83
