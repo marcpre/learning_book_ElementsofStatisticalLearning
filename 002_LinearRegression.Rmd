@@ -68,10 +68,16 @@ The first step is to use a F-Statistic and compute a p-value to test the signifi
 
 Using variable selection, we can see which variable has the highest impact on the model. Ideally we would like to try any number of combination to select a variable. 
 
-  * *Forward Selection:* We start with the null model - the model that contains an intercept, but no predictors. As a next step we fit p simple linear regression and add to the null model the variables that result in the lowest RSS. 
-  * *Backward Selection:* We start with all variables in the model and remove the variable with the greatest p-value. This procedure is continued and we stop it when we approach a certain threshold.
-  * *Mixed Selection:* This is a mix of the two models above. We start with forward selection and then take gradually variables away. We stop when we are at a certain threshold.
+* *Forward Selection:* We start with the null model - the model that contains an intercept, but no predictors. As a next step we fit p simple linear regression and add to the null model the variables that result in the lowest RSS. 
+* *Backward Selection:* We start with all variables in the model and remove the variable with the greatest p-value. This procedure is continued and we stop it when we approach a certain threshold.
+* *Mixed Selection:* This is a mix of the two models above. We start with forward selection and then take gradually variables away. We stop when we are at a certain threshold.
   
+### 3. Model Fit
+Using $R^2$ and $RSE$ we can detemine the model fit. Some properties are:
+
+1. $R^2$ equals the $Cor(Y, \hat{Y})$
+
+
 
 
 #### ---> Stopped at 79
