@@ -87,7 +87,16 @@ Making predictions in the model, we use simply the estimated coefficients. Howev
 2. In practice fitting a linear model is always trying to fit reality. Hence, there is also the model bias.
 3. Irreducible error - Even if we knew the true value, we cannot be absolutely certain, because there is still the irreducible error - $\epsilon$.
 
+## Other considerations
+
+### Qualitative Predictors
+
+Besides quantitive variables there can also be qualitative variables such as, gender, student status, ethnicity.
+
+#### Predictors with only two levels
+
+IF a qualitative predictor - also known as factor - has only two levels we can create a dummy variable which is either 1 or 0.
 
 
 
-#### ---> Stopped at 83
+#### ---> Stopped at 85
