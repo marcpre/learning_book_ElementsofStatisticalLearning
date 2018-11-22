@@ -95,8 +95,21 @@ Besides quantitive variables there can also be qualitative variables such as, ge
 
 #### Predictors with only two levels
 
-IF a qualitative predictor - also known as factor - has only two levels we can create a dummy variable which is either 1 or 0.
+If a qualitative predictor - also known as factor - has only two levels we can create a dummy variable which is either 1 or 0.
+
+#### Predictors with more than two levels
+
+If a single dummy variable has more than two levels then we can create several dummy variables to cope with this problem. So for example ethnicity then has for each factor several dummy variables.
+
+## Extension of the Linear Model
+
+Linear Regression makes two assumptions, so that the relationship between predictors and responses are:
+
+* additive
+* linear
 
 
 
-#### ---> Stopped at 85
+
+
+#### ---> Stopped at 87
