@@ -105,11 +105,14 @@ If a single dummy variable has more than two levels then we can create several d
 
 Linear Regression makes two assumptions, so that the relationship between predictors and responses are:
 
-* additive
-* linear
+*additive: That means that the changes in a predictor $X_j$ is independent on the responses $Y$ 
+*linear: Means that the changes in the response $Y$ due to a one-unit change in $X_j$ is constant, regardless of the value of $X_j$
+
+### Non-Linear Relationship
+Using polynomial regression, we can extend the linear regression model by non-linear releationships
 
 
 
 
 
-#### ---> Stopped at 87
+#### ---> Stopped at 101
