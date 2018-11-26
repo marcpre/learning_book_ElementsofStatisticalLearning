@@ -127,6 +127,14 @@ The linear model assums that there is a straight-line relationship between the p
 
 Residual plots are a perfect way to check non-linearity. A simple way to fix this problem is to use non-linear transformations of the predictors, such as log X, sqrt(X) and X^2.
 
+### 2. Correlation of error terms
+
+An important assumption of the linear model is that the error terms $\epsilon_1, \epsilon_2, ... ,\epsilon_n$ are uncorrelated. If the error terms are correlated, p-value can be lower and we risk to make wrong conclusions from the model. 
+
+How can error terms be correlated? This phenomenon usually happens in time-series data. In order to determine if this is the case, we can plot the residuals from our model as a function of time. If the errors are uncorrelated, then there should be no discernible pattern, else tracking happens: That means, that the error terms are tracking each other, are relatively close.
+
+
+
 
 
 #### ---> Stopped at 101
