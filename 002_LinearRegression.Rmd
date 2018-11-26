@@ -111,7 +111,21 @@ Linear Regression makes two assumptions, so that the relationship between predic
 ### Non-Linear Relationship
 Using polynomial regression, we can extend the linear regression model by non-linear releationships
 
+## Potential Problems
 
+1. Non-linearity of the response-predictor relationship
+2. Correlation of error terms
+3. Non-constant variance of error terms
+4. Outliers
+5. High-leverage points
+6. Collinearity
+
+
+### 1. Non-linearity of the response predictor relationship
+
+The linear model assums that there is a straight-line relationship between the predictors and the response. If the true relationship is not linear, OSL does not fit the model very good.
+
+Residual plots are a perfect way to check non-linearity. A simple way to fix this problem is to use non-linear transformations of the predictors, such as log X, sqrt(X) and X^2.
 
 
 
