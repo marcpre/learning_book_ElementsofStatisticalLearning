@@ -133,8 +133,12 @@ An important assumption of the linear model is that the error terms $\epsilon_1,
 
 How can error terms be correlated? This phenomenon usually happens in time-series data. In order to determine if this is the case, we can plot the residuals from our model as a function of time. If the errors are uncorrelated, then there should be no discernible pattern, else tracking happens: That means, that the error terms are tracking each other, are relatively close.
 
+### 3. Non-constant variance
+Another important assumption of the linear model is that the $Var(e_i)=\sigma^2$. If there is no constant variance, we can point this out as heteroscedasticity.
+
+When faced with such a problem the responses Y can be transformed using a concave function such as $log Y$ or $\sqrt(Y)$, which leads to a reduction in heteroscedasticity.
+
+If we have a guess about the variance, we can created a weighted model.
 
 
-
-
-#### ---> Stopped at 101
+#### ---> Stopped at 97
