@@ -140,5 +140,8 @@ When faced with such a problem the responses Y can be transformed using a concav
 
 If we have a guess about the variance, we can created a weighted model.
 
+### 4. Outlier
+
+
 
 #### ---> Stopped at 97
