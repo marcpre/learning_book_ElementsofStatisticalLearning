@@ -141,7 +141,16 @@ When faced with such a problem the responses Y can be transformed using a concav
 If we have a guess about the variance, we can created a weighted model.
 
 ### 4. Outlier
+An outlier is a point for which $y_i$ is far from the value predicted by the model. The problem with outliers is that it can falsify the model. Using a residual plot, one can identify outliers. 
+In practice it is not easy to identify how large a residual needs to be to consider it as an outlier. To address this problem, we can plot the studentized residuals, computed by dividing each residual $e_i$ by its estimated standard error.
+
+### 5. High Leverage Points
+
+High leverage observations are responses that have large impact on the predictors. In fact a high leverage point has an unusual large value for the reponse $x_i$. The problem with high-leverage points is that it can have a large impact on the predictors.
+
+In order to quantify an observation's leverage, we can compute the leverage statistic. 
 
 
 
-#### ---> Stopped at 97
+
+#### ---> Stopped at 99
