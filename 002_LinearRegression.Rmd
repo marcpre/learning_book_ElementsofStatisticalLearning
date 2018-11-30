@@ -150,7 +150,19 @@ High leverage observations are responses that have large impact on the predictor
 
 In order to quantify an observation's leverage, we can compute the leverage statistic. 
 
+### 6. Collinearity
+Collinearity refers to the situation where two or more predictor variables are closely related to each other.
+
+The problem of collinearity can have several effects on a model as we cannot easily separate the predictors which have an effect on the response variables. 
+
+If we have several variables that are correlating within the model we call this multi-collinearity.
+
+We can detect (multi-)collinearity when computing the variance inflation factor (VIF). If the VIF is 1, this indicates the complete absence of collinearity. Typically, a VIF that exceeds 5 or 10 indicates a problematic amount of collinearity. 
+
+When faced with collinearity there are two simple solutions:
+
+* Drop the response variablethat are correlating
+* Combine the correlated variables together in one single predictor
 
 
-
-#### ---> Stopped at 99
+#### ---> Stopped at 103
