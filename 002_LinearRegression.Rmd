@@ -165,4 +165,6 @@ When faced with collinearity there are two simple solutions:
 * Combine the correlated variables together in one single predictor
 
 
+
+
 #### ---> Stopped at 103
