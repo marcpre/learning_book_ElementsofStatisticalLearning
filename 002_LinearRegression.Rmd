@@ -164,6 +164,24 @@ When faced with collinearity there are two simple solutions:
 * Drop the response variablethat are correlating
 * Combine the correlated variables together in one single predictor
 
+## Comparison of Linear Regression with K-Nearest Neighbour
+
+Linear Regression is a parametric approach and it assums a linear function form of $f(x)$. Parametric approaches have:
+
+Advantages:
+* Need a smaller number of coefficients
+* Simpler to interprete
+* Tests of statistical significance can be easily performed
+
+Disadvantages:
+* You make initially strong assumptions about the form of $f(x)$
+
+In contrast non-parametric approaches do not explicitly assume a parametric form for $f(X)$ and therefore provide an alternative way to estimate $f(X)$.
+
+KNN Regression is a good way to perform a non-parametric approach to regression.
+
+When will a parametric approach outperform a non-parametric approach? The answer is simple, if the parametric form is closer to the true $f(X)$.
+
 
 
 
