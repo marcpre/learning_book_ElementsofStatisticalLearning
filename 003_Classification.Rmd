@@ -1,0 +1,16 @@
+---
+title: "003_Classification"
+output: html_document
+---
+
+# Classification
+
+In many cases the response variable is qualitative. Often to these variables we refer also that they are categorial. 
+
+## Why NOT linear regression
+
+Linear regression is not appropriate in the case of a qualitative response. If we have have several categories that do not align with each other then we could create a single model for each category. However, the dummy variable  approach can easily be used for variables that have two categorial values. 
+
+## Logistic Regression
+
+--> Stopped at 133

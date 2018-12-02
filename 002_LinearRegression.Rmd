@@ -183,6 +183,3 @@ KNN Regression is a good way to perform a non-parametric approach to regression.
 When will a parametric approach outperform a non-parametric approach? The answer is simple, if the parametric form is closer to the true $f(X)$.
 
 
-
-
-#### ---> Stopped at 103
