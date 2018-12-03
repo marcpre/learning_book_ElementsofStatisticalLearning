@@ -4,15 +4,12 @@ output: html_document
 ---
 
 # Classification
-
 In many cases the response variable is qualitative. Often to these variables we refer also that they are categorial. 
 
 ## Why NOT linear regression
-
 Linear regression is not appropriate in the case of a qualitative response. If we have have several categories that do not align with each other then we could create a single model for each category. However, the dummy variable  approach can easily be used for variables that have two categorial values. 
 
 ## Logistic Regression
-
 Should be used when the dependent variable is dichotomous (binary).
 
 Logistic Regression is defined as the following:
@@ -21,6 +18,9 @@ Logistic Regression is defined as the following:
 
 The left side is called logit or log-odds.
 
+### Estimate the Regression Coefficient
+To estimate the coefficients $\beta_0$ and $\beta_1$, we can use the maximum likelihood method. Basically we try to optimize the $\beta$ using a likelihood function. $\beta_0$ and $\beta_1$ are choosen to maximize this likelihood function.
 
 
->>> Stopped at 133
+
+# >>> Stopped at 133
