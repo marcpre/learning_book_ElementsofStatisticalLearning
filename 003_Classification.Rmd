@@ -13,4 +13,14 @@ Linear regression is not appropriate in the case of a qualitative response. If w
 
 ## Logistic Regression
 
---> Stopped at 133
+Should be used when the dependent variable is dichotomous (binary).
+
+Logistic Regression is defined as the following:
+
+![Definition Logistic Regression](https://www.statisticssolutions.com/wp-content/uploads/2010/01/log23.jpg)
+
+The left side is called logit or log-odds.
+
+
+
+>>> Stopped at 133
