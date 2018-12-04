@@ -21,6 +21,18 @@ The left side is called logit or log-odds.
 ### Estimate the Regression Coefficient
 To estimate the coefficients $\beta_0$ and $\beta_1$, we can use the maximum likelihood method. Basically we try to optimize the $\beta$ using a likelihood function. $\beta_0$ and $\beta_1$ are choosen to maximize this likelihood function.
 
+### Making Predictions
+Once the coefficience have been estimated it 
 
+## Multiple Logistic Regression
 
-# >>> Stopped at 133
+$$
+log(p(X)/1-p(X)) =  \beta_0 + \beta_1X_1 + ... + \beta_pX_p
+$$
+where $X = (X_1,...,X_p$ and $p$ predictors. Hence,
+
+$$
+p(X) = \frac{e^{\beta_0 + \beta_1X_1 + ... + \beta_pX_p}}{1 + e^{\beta_0 + \beta_1X_1 + ... + \beta_pX_p}}
+$$
+
+# >>> Stopped at 140
