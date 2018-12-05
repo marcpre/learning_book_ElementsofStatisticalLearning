@@ -35,4 +35,18 @@ $$
 p(X) = \frac{e^{\beta_0 + \beta_1X_1 + ... + \beta_pX_p}}{1 + e^{\beta_0 + \beta_1X_1 + ... + \beta_pX_p}}
 $$
 
+# Linear Discriminant Analysis
+
+Logistic regression is very useful for direct modeling if we have only two response classes in a variable. In a statistical jargon we model the conditional distribution of the response Y. 
+
+Linear Discrimination Analysis is useful if:
+
+* Parameters are quite unstable if parameters are well separated. LDA does not suffer from this problem.
+* If n is small and the distribution of the predictors $X$ is normal, then LDA is also more stable
+
+
+
+
+
+
 # >>> Stopped at 140
