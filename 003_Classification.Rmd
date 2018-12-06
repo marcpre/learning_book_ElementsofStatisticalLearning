@@ -44,9 +44,13 @@ Linear Discrimination Analysis is useful if:
 * Parameters are quite unstable if parameters are well separated. LDA does not suffer from this problem.
 * If n is small and the distribution of the predictors $X$ is normal, then LDA is also more stable
 
+## Using Bayes' Theorem for Classification
 
+$$
+Pr(Y = k|X = x) = \frac{\pi_kf_k(x)}{\sum\limits_{l=1}^K \pi_lf_l(x)}
+$$
 
-
+If we can approximate $f_k(x)$ then we can find a way to get the Baye's Classifier.
 
 
 # >>> Stopped at 140
