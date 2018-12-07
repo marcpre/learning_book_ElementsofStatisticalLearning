@@ -52,5 +52,31 @@ $$
 
 If we can approximate $f_k(x)$ then we can find a way to get the Baye's Classifier.
 
+## Confusion Matrix
+Is often used to describe a classification model. 
+
+* *True positives (TP):* These are cases in which we predicted yes (they have the disease), and they do have the disease.
+* *True negatives (TN):* We predicted no, and they don't have the disease.
+* *False positives (FP):* We predicted yes, but they don't actually have the disease. (Also known as a "Type I error.")
+* *False negatives (FN):* We predicted no, but they actually do have the disease. (Also known as a "Type II error.")
+
+Further terms are often calculated out of the confusion matrix:
+
+* *Accuracy:* How often is the classifier correct?
+* *Precision:* When yes is predicted, how often is it correct?
+* *Prevalence:* How often does the yes condition occur in our sample?
+
+## ROC curves and Area Under the Curve 
+
+ROC (Receiver Operating Characteristics) curve is a performance measurement for classification problem at various thresholds settings. ROC is a probability curve and AUC represents degree or measure of separability. It basically, explains "how much the model is capable of distinguishing between classes". This is basically important as we can optimize on the True Positive rate. 
+
+![ROC and AUC](https://cdn-images-1.medium.com/max/1600/1*pk05QGzoWhCgRiiFbz-oKQ.png)
+
+
+The overall performance of a classifier, summarized over all possible tresholds is given by the Area under the Curve (AUC). An AUC of 0.95 is very good. Hence, we expect a classifier that performs no better than chance to have an AUC of 0.5. An excellent model has AUC near to the 1 which means it has good measure of separability.
+
+If AUC is 0.5 the model has no discrimination capacity to distinguish between positive class and negative class.
+
+
 
 # >>> Stopped at 140
