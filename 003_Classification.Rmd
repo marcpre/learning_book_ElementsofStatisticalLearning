@@ -77,6 +77,18 @@ The overall performance of a classifier, summarized over all possible tresholds 
 
 If AUC is 0.5 the model has no discrimination capacity to distinguish between positive class and negative class.
 
+## Quadratic Discriminant Analysis
+LDA assumes that the observations within each class are drawn from a multivariate Gaussian distribution with a class specific mean vector and a covariance matrix that is common to all K classes. 
+
+Unlike LDA, QDA assumes that each class has its own covariance matrix. 
+
+Why does it matter weather we assume that the K classes share a common covariance matrix? The answer is the bias-variance trade-off. When there is 1 covariance matrix and $p$ predictors then we estimate $\frac{p(p+1)}{2}$ parameters. If we estimate - like with QDA - a seperate covariance matrix for each predictor-class we get $Kp(p+1)/2$ parameters.
+
+By assuming that there is a common covariance-matrix, we assume that x is linear and so there is lower variance. 
+
+LDA is better if there are less training observations and QDA is better if there are lots of training observations.
 
 
-# >>> Stopped at 140
+
+
+# >>> Stopped at 153
