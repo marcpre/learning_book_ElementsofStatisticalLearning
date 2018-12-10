@@ -9,6 +9,18 @@ By Resampling methods we understand repeatedly drawing samples from a training s
 
 Two methods are sound: cross-validation and bootstrapping. Cross-Validation can be used to estimate the test error associated with a given statistical method. Bootstrapping is used in several settings, mainly to provide a measure of accuracy of a parameter estimate or a given statistical learning method.
 
+## Cross-Validation
+
+The test error is the average error that comes up when trying to predict a response on a new observation that was NOT used in a training sample.
+
+When no test set is available holding out data can be used.
+
+
+
+
+
+
+
 
 
 
