@@ -4,3 +4,11 @@ output: html_document
 ---
 
 # Resampling
+
+By Resampling methods we understand repeatedly drawing samples from a training set and refitting a model of interest on each sample in order to obtain additional information about the fitted model. 
+
+Two methods are sound: cross-validation and bootstrapping. Cross-Validation can be used to estimate the test error associated with a given statistical method. Bootstrapping is used in several settings, mainly to provide a measure of accuracy of a parameter estimate or a given statistical learning method.
+
+
+
+
