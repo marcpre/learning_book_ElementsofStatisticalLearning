@@ -79,4 +79,4 @@ If AUC is 0.5 the model has no discrimination capacity to distinguish between po
 
 
 
-# >>> Stopped at 140
+# >>> Stopped at 151
