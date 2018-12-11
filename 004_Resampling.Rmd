@@ -15,7 +15,18 @@ The test error is the average error that comes up when trying to predict a respo
 
 When no test set is available holding out data can be used.
 
+### The Validation Set Approach
+Basically we randomly divide the available set into two parts, a training set and a validation set or hold out set. The resulting validation set error rate provides an estimate of the test error rate.
 
+The validation set approach is easy to implement, BUT has two drawbacks:
+
+1. The validation estimate of the test error rate can be highly variable, depending on precisely on which observation are included in the training set and which observations are included in the test set.
+
+2. Statistical models tend to perform worse on less observations the validation set error could be overestimated for the model fit on the entire data set.
+
+
+
+# ---> 180 stopped at
 
 
 
