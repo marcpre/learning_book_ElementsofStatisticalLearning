@@ -16,6 +16,9 @@ The test error is the average error that comes up when trying to predict a respo
 When no test set is available holding out data can be used.
 
 ### The Validation Set Approach
+Why do we do it?
+Validation is done to estimate the test error rate in a dataset.
+
 Basically we randomly divide the available set into two parts, a training set and a validation set or hold out set. The resulting validation set error rate provides an estimate of the test error rate.
 
 The validation set approach is easy to implement, BUT has two drawbacks:
@@ -24,14 +27,19 @@ The validation set approach is easy to implement, BUT has two drawbacks:
 
 2. Statistical models tend to perform worse on less observations the validation set error could be overestimated for the model fit on the entire data set.
 
+### Leave-One-Out Cross-Validation (LOOC)
+Basically the set is split into two parts. However, we do not create two subsets of comparable size, but instead leave a single observation out that we try to predict. The model is then fit on the $n-1$ training observations. Using $MSE = (y_1 - \hat{y_1})^2$ provides an unbiased estimate for the test error.
+
+The LOOC is the average of all $n$ test MSE's.
+
+The advantages of this approach are:
+* Less biased
+* LOOC will always give the same result as there is no randomness in the data
+
+The disadvantages of this approach are:
+* Extremely computing expensive
 
 
-# ---> 180 stopped at
 
 
-
-
-
-
-
-
+# ---> 181 stopped at
