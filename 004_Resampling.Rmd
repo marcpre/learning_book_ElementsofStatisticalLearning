@@ -39,7 +39,12 @@ The advantages of this approach are:
 The disadvantages of this approach are:
 * Extremely computing expensive
 
+### K-Fold Cross-Validation
+This method basically involves dividing the set into k groups - also called folds - of approximately equal size. The first fold is the validation set and the rest of the folds  - $k-1$ - are using the method. Basically, we compute for each fold the $MSE_1, MSE_2,..., MSE_k$. The k-fold CV is then computed by taking the average of all $MSE$ values. 
+
+### Bias-Variance Trade-Off for k-Fold Cross-Validation
+k-fold CV has some advantages over LOOC in terms of accuracy and the produced error rate: * k-fold cross validation is less computing intesive
+* Using $k=5$ or $k=10$ is an empirically good indicator for creating the folds
 
 
-
-# ---> 181 stopped at
+# ---> 186 stopped at
