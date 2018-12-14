@@ -46,5 +46,10 @@ This method basically involves dividing the set into k groups - also called fold
 k-fold CV has some advantages over LOOC in terms of accuracy and the produced error rate: * k-fold cross validation is less computing intesive
 * Using $k=5$ or $k=10$ is an empirically good indicator for creating the folds
 
+### Cross-Validation on Classification Problems
+
+
+
+
 
 # ---> 186 stopped at
