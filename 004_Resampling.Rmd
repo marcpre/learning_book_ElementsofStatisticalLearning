@@ -49,7 +49,10 @@ k-fold CV has some advantages over LOOC in terms of accuracy and the produced er
 ### Cross-Validation on Classification Problems
 
 
+## Bootstrapping
+Basically you can quantify uncertainty associated with an estimator or statistical learning method. The main advantage is that it can be applied to a variaty of statistical learning methods. With Bootstrapping we basically obtain repeatedly distinct data sets by repeatedly sample observations from the original data set.
 
+Each bootstrap data set contains n observations, sampled with replacement from the original data set. 
 
 
 # ---> 186 stopped at
