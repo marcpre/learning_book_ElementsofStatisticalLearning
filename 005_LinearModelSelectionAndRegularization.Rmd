@@ -1,0 +1,14 @@
+---
+title: "005_LinearModelSelectionAndRegularization"
+output: html_document
+---
+
+# Linear Model Selection and Regularization
+
+The linear model can be extended by using another fitting procedure, instead of least squares. Why is is positiv to use another fitting procedure?
+
+* Prediction Accuracy. If n > p - number of observations is larger than number of variables - then the least squares estimates tend to also have low variance. If n is smaller than p then there can be a lot of variability in the least squares fit, resulting in overfitting. 
+
+* Model Interpretability:  Often many variables in a linear regression are not associated with the response. Setting the coefficients to 0 we can determine which features are really needed. 
+
+# --> Stopped at 207
