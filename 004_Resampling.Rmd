@@ -48,8 +48,13 @@ k-fold CV has some advantages over LOOC in terms of accuracy and the produced er
 
 ### Cross-Validation on Classification Problems
 
+The LOOCV error rate takes the form:
+
+$$
+CV_{(n)}= \frac{1}{n}\sum_{i=1}^n Err_i
+$$
+where $Err_i = I(y_i \neq \hat{y}_i$
 
 
 
-
-# ---> 186 stopped at
+# ---> 189 stopped at
