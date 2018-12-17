@@ -55,6 +55,10 @@ CV_{(n)}= \frac{1}{n}\sum_{i=1}^n Err_i
 $$
 where $Err_i = I(y_i \neq \hat{y}_i$
 
+## Bootstrapping
+Basically you can quantify uncertainty associated with an estimator or statistical learning method. The main advantage is that it can be applied to a variaty of statistical learning methods. With Bootstrapping we basically obtain repeatedly distinct data sets by repeatedly sample observations from the original data set.
+
+Each bootstrap data set contains n observations, sampled with replacement from the original data set. 
 
 
 # ---> 189 stopped at
