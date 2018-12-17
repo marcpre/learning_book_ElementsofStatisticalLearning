@@ -11,4 +11,27 @@ The linear model can be extended by using another fitting procedure, instead of 
 
 * Model Interpretability:  Often many variables in a linear regression are not associated with the response. Setting the coefficients to 0 we can determine which features are really needed. 
 
+## Subset
+
+### Best Subset Selection
+
+We fit a seperate least square regression for each possible combination of the p predictors. After that we try to identify all the ones that fit best. 
+
+The algorithm works as the following:
+
+1. Select the null model - $M_0$ - for each predictor. This model simply predicts the sample mean for each observation.
+
+2. For k = 1,2, ... ,p
+2a. Fit all models that contain exactly k predictors
+2b. Pick the best model amonge these ${p\choose k}$
+
+3. Select a single best model using cross-validated prediction error, $C_p (AIC), BIC$ or adjusted $R^2$.
+
+The main disadvantages of this approach is that in generall there have to be $2^n$ considered.
+  
+
+
+
+
+
 # --> Stopped at 207
