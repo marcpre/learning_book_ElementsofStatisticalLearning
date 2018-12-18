@@ -28,10 +28,20 @@ The algorithm works as the following:
 3. Select a single best model using cross-validated prediction error, $C_p (AIC), BIC$ or adjusted $R^2$.
 
 The main disadvantages of this approach is that in generall there have to be $2^n$ considered.
-  
+
+### Stepwise Selection
+
+For large $p$ it is computationally hard to select the rigth variables. Stepwise regression provides an alternative to explore far more restrictive models.
+
+## Forward Stepwise Selection
+Forward Stepwise Selection is a good alternative to best subset selection. 
+
+This is how it works? Forward stepwise selection ads one predictor at a time to the model until all predictors are within the model. Only variables are added to the model, which give at the step time the greatest additional improvement to the model. For forward regression mainly $1 + p(p+1)/2$ model are fit. So basically if $p=20$ it requires fitting only $211$ models. 
+
+For choosing the right model we can either use the RSS or highest $R^2$. 
+
+There is not guarantee if you use Forward Stepwise Regression to find the best model. For example if the best 1-variable model is $X_1$ and the best 2-variable model is $X_2$ and $X_3$, then forward stepwise regression will fail. The reason is that it will fail to identify the best possible model, as $M_1$ will contain $X_1$ with one additional variable. 
 
 
 
-
-
-# --> Stopped at 207
+# --> Stopped at 209
