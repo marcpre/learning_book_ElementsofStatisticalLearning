@@ -42,6 +42,16 @@ For choosing the right model we can either use the RSS or highest $R^2$.
 
 There is not guarantee if you use Forward Stepwise Regression to find the best model. For example if the best 1-variable model is $X_1$ and the best 2-variable model is $X_2$ and $X_3$, then forward stepwise regression will fail. The reason is that it will fail to identify the best possible model, as $M_1$ will contain $X_1$ with one additional variable. 
 
+## Backward Stepwise Selection
+Similar to forward stepwise regression we push variables out. However, the main difference is that we do not add variables but remove variables from the dataset. The least useful predictor is removed, one-at-a-time. 
+
+One requirement of backward stepwise selection is that the number of samples $n$ is larger than the number of variables $p$
+
+## Hybrid Approaches
+The best approaches give similar but not identical models. There are a number of further approaches that tend to focus more on basic subset selection, but use forward/backward stepwise selection to bring down the computational advantage.
 
 
-# --> Stopped at 209
+
+
+
+# --> Stopped at 212
