@@ -50,8 +50,19 @@ One requirement of backward stepwise selection is that the number of samples $n$
 ## Hybrid Approaches
 The best approaches give similar but not identical models. There are a number of further approaches that tend to focus more on basic subset selection, but use forward/backward stepwise selection to bring down the computational advantage.
 
+## Choosing the optimal model
+
+Using smallest RSS, largest R^2 are good estimators for checking if the model has a good fit. However, the test error is not a good fit for estimating the optimal model. Hence, we have to identify the correct training error. 
+
+## $C_p$, AIC, BIC, and Adjusted $R^2$
+
+The training set MSE is usually an underestimate of the test MSE. The reason for this is that if we try to estimate a regression coefficient, we usually try to minimize the training data using least squares, we specifically estimate the regression coefficients such as the training RSS. Hence, the test error may not decrease. However, we can **adjust** the training error for the model size. There are 4 ways for adjusting:
+$C_p$, AIC, BIC, and Adjusted $R^2$
+
+We can use one of the above approaches to select the best model.
 
 
 
 
-# --> Stopped at 212
+
+# --> Stopped at 215
