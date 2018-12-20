@@ -61,8 +61,12 @@ $C_p$, AIC, BIC, and Adjusted $R^2$
 
 We can use one of the above approaches to select the best model.
 
+## Validation and Cross-Validation
+We can  calculate the test-error and pick the best model based on this. 
+
+However, if we repeatetly change the split of the data and the validation set, the test error might change. So we can use the *one-standard-error rule*. Basically, we first calculate the standard error of the estimated test MSE for each model size, and then select the model that has the lowest test error that is within 1 standard error of the lowest on the curve. 
+
+# Shrinkage Methods
 
 
-
-
-# --> Stopped at 215
+# --> Stopped at 216
