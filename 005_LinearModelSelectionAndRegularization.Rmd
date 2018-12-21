@@ -68,5 +68,22 @@ However, if we repeatetly change the split of the data and the validation set, t
 
 # Shrinkage Methods
 
+As an alternative we can use shrinkage methods to constrain or regularize the coefficient estimates towards 0. There are two methods for shrinkage *ridge regression* and *lasso*.
+
+## Ridge Regression
+
+$$
+RSS + \lambda \sum^p_{j=1} \beta^2_j
+$$
+
+* $ \lambda \geq 0$ is a tuning parameter
+* $ \sum^p_{j=1} \beta^2_j $ is called shrinkage penalty
+
+### Why does ridge regression improve over least squares?
+Basically, the answer lies in the bias-variance trade-off. As $\lambda$ increases the flexibility of the ridge regression fit decreases, leading to decreased variance but increased bias. Hence, ridge regression works best in the situations when least squared estimates have a high variance.
+
+
+
+
 
 # --> Stopped at 216
