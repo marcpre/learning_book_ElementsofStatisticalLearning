@@ -84,8 +84,31 @@ Basically, the answer lies in the bias-variance trade-off. As $\lambda$ increase
 
 ## The Lasso
 
-Ridge Regression does have one obvious disadvantage. The method includes all $p$ predictors in the final model. The shrinkage $\lambda$ will shrink all coefficients towards $0$. This is not a problem for model accuracy, but for interpretability of the model.
+Ridge Regression does have one obvious disadvantage. The method includes all $p$ predictors in the final model. The shrinkage $\lambda$ will shrink all coefficients towards $0$. This is not a problem for model accuracy, but for interpretability of the model. The difference between ridge and lasso regression is the use of the $|\beta_j|$ term in the ridge regression penalty.  In case of the lasso regression the tuning parameter $\lambda$ forces some parameters towards zero, when it is sufficiently large.
+
+$$
+RSS + \lambda \sum^p_{j=1} |\beta_j|
+$$
+
+### Comparing Lasso and Ridge Regression
+
+Lasso has one main advantage over ridge regression, it produces simpler and more interpretable modelsthat involve only a subset of the predictors.
+
+However, lasso tends to outperform ridge regression in terms of bias, variance and MSE.
+
+## Select a tuning parameter
+
+Lasso and Ridge Regression require to select $\lambda$, the tuning parameter. We can simply compute a grid of parameters and pick for which the cross-validation error is smallest. 
 
 
 
-# --> Stopped at 216
+
+
+
+
+
+
+
+
+
+# --> Stopped at 231
