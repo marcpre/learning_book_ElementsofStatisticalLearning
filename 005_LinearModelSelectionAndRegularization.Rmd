@@ -102,6 +102,18 @@ Lasso and Ridge Regression require to select $\lambda$, the tuning parameter. We
 
 
 
+# Dimension Reduction Methods
+
+The above methods have controlled variance in two different ways, either by selecting a subset of of the original variables or by shrinking their coefficients towards zero. With Dimension Reduction Methods we basically transform the predictor variables and then fit a least squared model using the newly transformed variables.
+
+
+Basically we choose a constant $\phi$ and transform the variables. Then we perform regression on top of it. We can choose the constant $\phi$ either by principal component analysis or partial least squares.
+
+## Principle Component Analysis (PCA)
+
+PCA is a typical method to derive a low-dimensional set of features from a large set of variables. We can think of PCA, that it creates a single number that summarieses a component.
+
+Basically we would like to reduce the dataset by showing string patterns. 
 
 
 
@@ -110,5 +122,4 @@ Lasso and Ridge Regression require to select $\lambda$, the tuning parameter. We
 
 
 
-
-# --> Stopped at 231
+# --> Stopped at 236
