@@ -115,11 +115,15 @@ PCA is a typical method to derive a low-dimensional set of features from a large
 
 Basically we would like to reduce the dataset by showing string patterns. 
 
+## Principal Component Regression (PCR)
+
+PCR first creates principal components and then using these components for creating a linear regression model that uses the least squares approach. The main assumption is that the directions in which $X_1,...,X_p$ show the most variation are the directions that are associated with $Y$. If this assumption is true, then fitting a least squares model to $Z_1,...,Z_p$ is better than fitting to $X_1,...,X_p$. 
+
+Compared to ridge and lasso regression PCR does not perform as good, when many principal components are required. However, PCR performs better if the first few principal components are sufficient to capture most of the variation in the predictors. 
+
+When performing PCR, it is recommended to standartize each predictor. 
 
 
 
 
-
-
-
-# --> Stopped at 236
+# --> Stopped at 239
