@@ -123,6 +123,18 @@ Compared to ridge and lasso regression PCR does not perform as good, when many p
 
 When performing PCR, it is recommended to standartize each predictor. 
 
+## Partial Least Squares (PLS)
+
+Partial  Least Squares is a supervised alternative to PCR. Basically, we identify a new set of features $Z_1,...,Z_p$ that are linear combinations of the original features and then fit a model via least squares. However, in comparison to PCR, PLS identifies these features in a supervised way - that is, it makes use of the response $Y$ in order to identify new feature that approximate the old features well. 
+
+PLS tries to find direction to explain both the response and the predictors.
+
+In general it performs similar well as ridge regression or PCR. PLS can be used to reduce bias, it has also the potential to increase variance. 
+
+
+
+
+
 
 
 
