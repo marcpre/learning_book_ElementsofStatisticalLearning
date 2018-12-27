@@ -132,10 +132,19 @@ PLS tries to find direction to explain both the response and the predictors.
 In general it performs similar well as ridge regression or PCR. PLS can be used to reduce bias, it has also the potential to increase variance. 
 
 
+# High Dimensions
+
+## High-Dimensional Data
+
+Most statistical models for regression and classification are intended for the low-dimensional setting in which $n$ - the number of observations - is greater than $p$. Data sets that have more features than observations are called high-dimensional. 
 
 
 
 
 
 
-# --> Stopped at 239
+
+
+
+
+# --> Stopped at 242
