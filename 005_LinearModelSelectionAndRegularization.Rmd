@@ -138,6 +138,9 @@ In general it performs similar well as ridge regression or PCR. PLS can be used 
 
 Most statistical models for regression and classification are intended for the low-dimensional setting in which $n$ - the number of observations - is greater than $p$. Data sets that have more features than observations are called high-dimensional. 
 
+## What goes wrong in high-dimensions?
+
+If least squares is performed when the number of features p is as large as the number of observations n, then the method results in perfect fit to the data.
 
 
 
@@ -146,5 +149,4 @@ Most statistical models for regression and classification are intended for the l
 
 
 
-
-# --> Stopped at 242
+# --> Stopped at 244
