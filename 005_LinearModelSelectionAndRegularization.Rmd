@@ -152,7 +152,11 @@ Lasso, ridge regression and forward stepwise selection are useful methods for us
 
 As 3) states, this can also be seen as the curse of dimensionality. The number of features used to fit a model does not increase the quality of the fitted model. In general features that are truly associated with the response will improve the fitted model, hence will reduce the test set error. However, if we add noise features than the model quality will deteriorate and the test error will increase. 
 
+## Interpretaion of result in high dimensions
 
+In high dimensions the multi-conllinearity - variables that correlate with each other - problem is extreme, as any variable can be written as a linear combination of all of the other variables in the model. This basically means that we cannot truly identify the variables that affect the outcome the most. 
+
+Furthermore, never use sum of squared errors, p-value or $R^2$ as evidence for a good or bad model. However, MSE or $R^2$ on an independent test-set are valid measures!
 
 
 
