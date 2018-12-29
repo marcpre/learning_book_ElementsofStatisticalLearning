@@ -142,7 +142,15 @@ Most statistical models for regression and classification are intended for the l
 
 If least squares is performed when the number of features p is as large as the number of observations n, then the method results in perfect fit to the data.
 
+## Regression in High-Dimensions
 
+Lasso, ridge regression and forward stepwise selection are useful methods for using regression in high dimensional settings. In high dimensionality problems the follwing problems play a huge role:
+
+1) regularization or shrinkage
+2) appropriate tuning parameter selection is crucial for good predictive performance
+3) the test error increases as the dimensionality of the problem increases
+
+As 3) states, this can also be seen as the curse of dimensionality. The number of features used to fit a model does not increase the quality of the fitted model. In general features that are truly associated with the response will improve the fitted model, hence will reduce the test set error. However, if we add noise features than the model quality will deteriorate and the test error will increase. 
 
 
 
