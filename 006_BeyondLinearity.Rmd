@@ -1,0 +1,19 @@
+---
+title: "006_BeyondLinearity"
+output: html_document
+---
+
+#Moving Beyond Linearity
+
+Besides staying with the linear model, we can lossen the assumption of linearity and examine simple extensions such as:
+
+* *Polynomial Regression:* Extend the linear model by adding extra predictors that are raised to the power
+* *Step functions:* These functions cut the range of K variables into several regions in order to fill piecewise a constant function.
+* *Regression splines:* Basically, they divide the range of X into K distinct regions and fit a polynomial function to the data. However, these polynomial functions are constraint and fit the boundaries. This can in fact produce an extremely flexible fit.
+* *Smoothing splines:* We basically minimize the residual sum of squares criterion subject to a smoothness penalty.
+* *Local regression:* Similar to splines, BUT the regressions are allowed to overlap.
+* *Generalized additive models:* Extend the above methods to deal with multiple predictors.
+
+
+
+# --> Stopped at 270
