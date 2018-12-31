@@ -14,6 +14,19 @@ Besides staying with the linear model, we can lossen the assumption of linearity
 * *Local regression:* Similar to splines, BUT the regressions are allowed to overlap.
 * *Generalized additive models:* Extend the above methods to deal with multiple predictors.
 
+## Polynomial Regression
+
+We fit the model using a polynomial function:
+
+$$
+y_i = \beta_0 + \beta_1x_i + \beta_2x_i^2 + \beta_3x_i^3 + ... + \beta_dx_i^d + \epsilon_i
+$$
+
+where $\epsilon_i$ is the error term.
+
+Generally speaking we use a 3rd or 4th degree polynomial.
+
+What is the Variance for a polynomial regression? Basically we get the variance for each coefficient. The estimated pointwise standart error of this variance is the square root of this variance. 
 
 
-# --> Stopped at 270
+# --> Stopped at 272
