@@ -36,6 +36,10 @@ Hence, we can create cutpoints $c_1,c_2, ..., c_K$ on $X$ and then we construct 
 
 Picewise constant functions are best used when there are natural breakspoints in the predictors
 
+## Basis Functions
+
+Polynomial and Step functions are special cases of a basis function approach. The basic idea is that the function is is known in advance. 
+
 
 
 
