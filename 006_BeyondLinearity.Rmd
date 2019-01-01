@@ -28,5 +28,15 @@ Generally speaking we use a 3rd or 4th degree polynomial.
 
 What is the Variance for a polynomial regression? Basically we get the variance for each coefficient. The estimated pointwise standart error of this variance is the square root of this variance. 
 
+## Step Functions
+
+Using a polynomial function imposes a global structure on the non-linear function of X. Instead we can also use step functions. Basically we break a constant into bins and fit a different category on each bin.
+
+Hence, we can create cutpoints $c_1,c_2, ..., c_K$ on $X$ and then we construct $K+1$ new variables.
+
+Picewise constant functions are best used when there are natural breakspoints in the predictors
+
+
+
 
 # --> Stopped at 272
