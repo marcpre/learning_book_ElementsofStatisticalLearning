@@ -40,7 +40,26 @@ Picewise constant functions are best used when there are natural breakspoints in
 
 Polynomial and Step functions are special cases of a basis function approach. The basic idea is that the function is is known in advance. 
 
+## Regression Splines
+
+### Piecewise Polynomials
+
+Basically we fit a polynomial regression model to a cubic form:
+
+$$
+y_i = \beta_0 + \beta_1x_i + \beta_2x_i^2 + \beta_3x_i^3 + \epsilon_i
+$$
+
+If the polynomial has a single knot it takes the form and has a constraint with $x_i < c$.
+
+### Constraints and Splines
+
+In general cubic splines with $K$ knots use $4 + K$ degrees of freedom.
 
 
 
-# --> Stopped at 272
+
+
+
+
+# --> Stopped at 277
