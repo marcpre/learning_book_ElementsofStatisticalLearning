@@ -56,10 +56,24 @@ If the polynomial has a single knot it takes the form and has a constraint with 
 
 In general cubic splines with $K$ knots use $4 + K$ degrees of freedom.
 
+### The spline basis representation
+
+A cubic spline with K-knotes can be represented as:
+
+$$
+y_i = \beta_0 + \beta_1b_1(x_i) + \beta_2b_2(x_i) + ... + \beta_{K+3}b_{K+3}(x_i) + \epsilon_i
+$$
+
+However, splines can have high variance at the outer range of the predictors.
+
+### Choosing the number and locations of the knots
+
+Regression coefficients are more flexible in regions that contain a lot of knots, because in those regions the polynomial coefficients can change rapidly. It is best-practice to place the knots uniformly accross the spline. Software can help as the user chooses the degrees of freedome and the software places the knots. 
+
+How many knots should be placed?
+Either we can try-error and see which curve fits best or use crossvalidation and then compute the cross-validated RSS. 
 
 
 
 
-
-
-# --> Stopped at 277
+# --> Stopped at 280
