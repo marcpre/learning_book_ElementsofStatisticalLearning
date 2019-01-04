@@ -73,7 +73,13 @@ Regression coefficients are more flexible in regions that contain a lot of knots
 How many knots should be placed?
 Either we can try-error and see which curve fits best or use crossvalidation and then compute the cross-validated RSS. 
 
+### Comparison to Polynomial Regression
+
+Regression splines give better results than polynomial regressions. The reason for this is, that splines increase flexibility by their knots, but keep the degree fixed.
 
 
 
-# --> Stopped at 280
+
+
+
+# --> Stopped at 281
