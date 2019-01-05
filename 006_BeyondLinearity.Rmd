@@ -77,9 +77,28 @@ Either we can try-error and see which curve fits best or use crossvalidation and
 
 Regression splines give better results than polynomial regressions. The reason for this is, that splines increase flexibility by their knots, but keep the degree fixed.
 
+## Smoothing Splines
+
+### Overview of Smoothing Splines
+
+In contrast to fitting a smoothing curve, which fits the data, we would like to find a function $g(x)$ that fits the data well. In fact $RSS$ should be small. However, $g(x)$ should also be smooth as an exact match would overfit the data. 
+
+A natural approach is to find a function $g$ that minimizes
+
+$$
+\sum^{n}_{i=1} (y_i - g(x_i))^2 + \lambda \int g^n (t)^2 dt
+$$
+
+Basically we take the "Loss+Penalty" formulation that was shown in chapter 6. 
+
+By doing this we basically get the "shrunken" version of a cubic spline, which is controlled by the parameter $\lambda$.
 
 
 
 
 
-# --> Stopped at 281
+
+
+
+
+# --> Stopped at 282
