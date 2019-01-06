@@ -93,6 +93,9 @@ Basically we take the "Loss+Penalty" formulation that was shown in chapter 6.
 
 By doing this we basically get the "shrunken" version of a cubic spline, which is controlled by the parameter $\lambda$.
 
+### Choosing the smoothing parameter $ \lambda $
+
+The fact that a smoothing spline has a knot at each data point allows a great deal of flexibility, which seems that that the spline has far too many degrees of freedom. The tuning parameter $\lambda$ controls the effective degrees of freedom.   
 
 
 
@@ -100,5 +103,4 @@ By doing this we basically get the "shrunken" version of a cubic spline, which i
 
 
 
-
-# --> Stopped at 282
+# --> Stopped at 284
