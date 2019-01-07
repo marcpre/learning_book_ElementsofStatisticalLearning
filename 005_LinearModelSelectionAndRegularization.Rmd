@@ -86,4 +86,4 @@ Basically, the answer lies in the bias-variance trade-off. As $\lambda$ increase
 
 
 
-# --> Stopped at 216
+# --> Stopped at 221
