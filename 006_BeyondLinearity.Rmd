@@ -103,5 +103,29 @@ Local Regression is another approach for fittign flexible non-linear functions f
 
 Local regression does not perform well if there are more than 3,4 predictors. 
 
+## Generalized additive models (GAMs)
+
+Generalized additive models provide a general framework for allowing non-linear functions extending a standart linear model for a variable, while maintaining additivity. 
+
+### GAMs for regression problems
+
+A natural way to extend a linear regression model is:
+
+$$
+y_i = \beta_0 + \beta_1x_{i1} + \beta_2x_{i2} + ... +  + \beta_px_{ip} + \epsilon_i
+$$
+using a non-linear function:
+
+$$
+y_i = \beta_0 + \sum^{p}_{j=1} f_j(x_{ij} + \epsilon_i
+$$
+
+
+
+
+
+
+
+
 
 # --> Stopped at 284
