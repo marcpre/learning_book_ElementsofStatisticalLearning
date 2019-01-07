@@ -1,0 +1,107 @@
+---
+title: "006_BeyondLinearity"
+output: html_document
+---
+
+#Moving Beyond Linearity
+
+Besides staying with the linear model, we can lossen the assumption of linearity and examine simple extensions such as:
+
+* *Polynomial Regression:* Extend the linear model by adding extra predictors that are raised to the power
+* *Step functions:* These functions cut the range of K variables into several regions in order to fill piecewise a constant function.
+* *Regression splines:* Basically, they divide the range of X into K distinct regions and fit a polynomial function to the data. However, these polynomial functions are constraint and fit the boundaries. This can in fact produce an extremely flexible fit.
+* *Smoothing splines:* We basically minimize the residual sum of squares criterion subject to a smoothness penalty.
+* *Local regression:* Similar to splines, BUT the regressions are allowed to overlap.
+* *Generalized additive models:* Extend the above methods to deal with multiple predictors.
+
+## Polynomial Regression
+
+We fit the model using a polynomial function:
+
+$$
+y_i = \beta_0 + \beta_1x_i + \beta_2x_i^2 + \beta_3x_i^3 + ... + \beta_dx_i^d + \epsilon_i
+$$
+
+where $\epsilon_i$ is the error term.
+
+Generally speaking we use a 3rd or 4th degree polynomial.
+
+What is the Variance for a polynomial regression? Basically we get the variance for each coefficient. The estimated pointwise standart error of this variance is the square root of this variance. 
+
+## Step Functions
+
+Using a polynomial function imposes a global structure on the non-linear function of X. Instead we can also use step functions. Basically we break a constant into bins and fit a different category on each bin.
+
+Hence, we can create cutpoints $c_1,c_2, ..., c_K$ on $X$ and then we construct $K+1$ new variables.
+
+Picewise constant functions are best used when there are natural breakspoints in the predictors
+
+## Basis Functions
+
+Polynomial and Step functions are special cases of a basis function approach. The basic idea is that the function is is known in advance. 
+
+## Regression Splines
+
+### Piecewise Polynomials
+
+Basically we fit a polynomial regression model to a cubic form:
+
+$$
+y_i = \beta_0 + \beta_1x_i + \beta_2x_i^2 + \beta_3x_i^3 + \epsilon_i
+$$
+
+If the polynomial has a single knot it takes the form and has a constraint with $x_i < c$.
+
+### Constraints and Splines
+
+In general cubic splines with $K$ knots use $4 + K$ degrees of freedom.
+
+### The spline basis representation
+
+A cubic spline with K-knotes can be represented as:
+
+$$
+y_i = \beta_0 + \beta_1b_1(x_i) + \beta_2b_2(x_i) + ... + \beta_{K+3}b_{K+3}(x_i) + \epsilon_i
+$$
+
+However, splines can have high variance at the outer range of the predictors.
+
+### Choosing the number and locations of the knots
+
+Regression coefficients are more flexible in regions that contain a lot of knots, because in those regions the polynomial coefficients can change rapidly. It is best-practice to place the knots uniformly accross the spline. Software can help as the user chooses the degrees of freedome and the software places the knots. 
+
+How many knots should be placed?
+Either we can try-error and see which curve fits best or use crossvalidation and then compute the cross-validated RSS. 
+
+### Comparison to Polynomial Regression
+
+Regression splines give better results than polynomial regressions. The reason for this is, that splines increase flexibility by their knots, but keep the degree fixed.
+
+## Smoothing Splines
+
+### Overview of Smoothing Splines
+
+In contrast to fitting a smoothing curve, which fits the data, we would like to find a function $g(x)$ that fits the data well. In fact $RSS$ should be small. However, $g(x)$ should also be smooth as an exact match would overfit the data. 
+
+A natural approach is to find a function $g$ that minimizes
+
+$$
+\sum^{n}_{i=1} (y_i - g(x_i))^2 + \lambda \int g^n (t)^2 dt
+$$
+
+Basically we take the "Loss+Penalty" formulation that was shown in chapter 6. 
+
+By doing this we basically get the "shrunken" version of a cubic spline, which is controlled by the parameter $\lambda$.
+
+### Choosing the smoothing parameter $ \lambda $
+
+The fact that a smoothing spline has a knot at each data point allows a great deal of flexibility, which seems that that the spline has far too many degrees of freedom. The tuning parameter $\lambda$ controls the effective degrees of freedom.   
+
+## Local Regression
+
+Local Regression is another approach for fittign flexible non-linear functions for computing a fit of a certain target point using only training data that is nearby. 
+
+Local regression does not perform well if there are more than 3,4 predictors. 
+
+
+# --> Stopped at 284

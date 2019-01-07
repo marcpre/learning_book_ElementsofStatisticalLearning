@@ -82,8 +82,83 @@ $$
 ### Why does ridge regression improve over least squares?
 Basically, the answer lies in the bias-variance trade-off. As $\lambda$ increases the flexibility of the ridge regression fit decreases, leading to decreased variance but increased bias. Hence, ridge regression works best in the situations when least squared estimates have a high variance.
 
+## The Lasso
+
+Ridge Regression does have one obvious disadvantage. The method includes all $p$ predictors in the final model. The shrinkage $\lambda$ will shrink all coefficients towards $0$. This is not a problem for model accuracy, but for interpretability of the model. The difference between ridge and lasso regression is the use of the $|\beta_j|$ term in the ridge regression penalty.  In case of the lasso regression the tuning parameter $\lambda$ forces some parameters towards zero, when it is sufficiently large.
+
+$$
+RSS + \lambda \sum^p_{j=1} |\beta_j|
+$$
+
+### Comparing Lasso and Ridge Regression
+
+Lasso has one main advantage over ridge regression, it produces simpler and more interpretable modelsthat involve only a subset of the predictors.
+
+However, lasso tends to outperform ridge regression in terms of bias, variance and MSE.
+
+## Select a tuning parameter
+
+Lasso and Ridge Regression require to select $\lambda$, the tuning parameter. We can simply compute a grid of parameters and pick for which the cross-validation error is smallest. 
+
+
+
+# Dimension Reduction Methods
+
+The above methods have controlled variance in two different ways, either by selecting a subset of of the original variables or by shrinking their coefficients towards zero. With Dimension Reduction Methods we basically transform the predictor variables and then fit a least squared model using the newly transformed variables.
+
+
+Basically we choose a constant $\phi$ and transform the variables. Then we perform regression on top of it. We can choose the constant $\phi$ either by principal component analysis or partial least squares.
+
+## Principle Component Analysis (PCA)
+
+PCA is a typical method to derive a low-dimensional set of features from a large set of variables. We can think of PCA, that it creates a single number that summarieses a component.
+
+Basically we would like to reduce the dataset by showing string patterns. 
+
+## Principal Component Regression (PCR)
+
+PCR first creates principal components and then using these components for creating a linear regression model that uses the least squares approach. The main assumption is that the directions in which $X_1,...,X_p$ show the most variation are the directions that are associated with $Y$. If this assumption is true, then fitting a least squares model to $Z_1,...,Z_p$ is better than fitting to $X_1,...,X_p$. 
+
+Compared to ridge and lasso regression PCR does not perform as good, when many principal components are required. However, PCR performs better if the first few principal components are sufficient to capture most of the variation in the predictors. 
+
+When performing PCR, it is recommended to standartize each predictor. 
+
+## Partial Least Squares (PLS)
+
+Partial  Least Squares is a supervised alternative to PCR. Basically, we identify a new set of features $Z_1,...,Z_p$ that are linear combinations of the original features and then fit a model via least squares. However, in comparison to PCR, PLS identifies these features in a supervised way - that is, it makes use of the response $Y$ in order to identify new feature that approximate the old features well. 
+
+PLS tries to find direction to explain both the response and the predictors.
+
+In general it performs similar well as ridge regression or PCR. PLS can be used to reduce bias, it has also the potential to increase variance. 
+
+
+# High Dimensions
+
+## High-Dimensional Data
+
+Most statistical models for regression and classification are intended for the low-dimensional setting in which $n$ - the number of observations - is greater than $p$. Data sets that have more features than observations are called high-dimensional. 
+
+## What goes wrong in high-dimensions?
+
+If least squares is performed when the number of features p is as large as the number of observations n, then the method results in perfect fit to the data.
+
+## Regression in High-Dimensions
+
+Lasso, ridge regression and forward stepwise selection are useful methods for using regression in high dimensional settings. In high dimensionality problems the follwing problems play a huge role:
+
+1) regularization or shrinkage
+2) appropriate tuning parameter selection is crucial for good predictive performance
+3) the test error increases as the dimensionality of the problem increases
+
+As 3) states, this can also be seen as the curse of dimensionality. The number of features used to fit a model does not increase the quality of the fitted model. In general features that are truly associated with the response will improve the fitted model, hence will reduce the test set error. However, if we add noise features than the model quality will deteriorate and the test error will increase. 
+
+## Interpretaion of result in high dimensions
+
+In high dimensions the multi-conllinearity - variables that correlate with each other - problem is extreme, as any variable can be written as a linear combination of all of the other variables in the model. This basically means that we cannot truly identify the variables that affect the outcome the most. 
+
+Furthermore, never use sum of squared errors, p-value or $R^2$ as evidence for a good or bad model. However, MSE or $R^2$ on an independent test-set are valid measures!
 
 
 
 
-# --> Stopped at 221
+# --> Stopped at 247
