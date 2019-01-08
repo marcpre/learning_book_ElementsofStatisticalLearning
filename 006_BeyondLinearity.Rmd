@@ -120,12 +120,15 @@ $$
 y_i = \beta_0 + \sum^{p}_{j=1} f_j(x_{ij} + \epsilon_i
 $$
 
+### Advantages/Disadvantages of GAMs
 
++ Allows us to model non-linear relationships
++ More accurate predictions for $Y$ can be made
++ As the model is additive we can still measure the effect of one or the other predictor
++ The smoothness of the function can be summarized by its degrees of freedome
+- As the model is additive important interactions might be missed.
 
-
-
-
-
+## GAMs for classification problems
 
 
 # --> Stopped at 284
