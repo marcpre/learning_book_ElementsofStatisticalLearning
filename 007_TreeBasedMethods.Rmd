@@ -1,0 +1,12 @@
+---
+title: "007_TreeBasedMethods"
+output: html_document
+---
+
+# Tree Based Methods
+
+We basically use stratifying or segmenting predictors space into simple regions, typically using the mean or the mode. Such methods are called decision tree methods. 
+
+
+
+# --> Stopped at 307

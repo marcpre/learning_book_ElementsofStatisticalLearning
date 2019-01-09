@@ -135,5 +135,3 @@ A natural way to use GAMs in classification problems is:
 $$
 \log(\frac{p(X)}{1 - p(X)}) = \beta_0 + f_1(X_{1}) + f_2(X_{2}) + ... + f_p(X_{p})
 $$
-
-# --> Stopped at 307
