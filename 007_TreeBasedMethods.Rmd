@@ -7,6 +7,13 @@ output: html_document
 
 We basically use stratifying or segmenting predictors space into simple regions, typically using the mean or the mode. Such methods are called decision tree methods. 
 
+## Regression Trees
 
+The process for regression trees is as the following:
+
+1. We divide the predictor space into non-overlapping regions
+2. For every observation we that falls into one region, we make the same prediction. Simply the mean of the response values.
+
+To create the regions we simply create high-dimensional rectangles. (boxes) We seperate these boxes by minimizing the RSS. As it is impossible to find every box, we simply use recursive binary splitting. 
 
 # --> Stopped at 307
