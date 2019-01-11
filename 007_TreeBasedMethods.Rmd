@@ -9,11 +9,30 @@ We basically use stratifying or segmenting predictors space into simple regions,
 
 ## Regression Trees
 
+Are used to predict quantitative responses.
+
+### Prediction via Stratification of the Feature Space
+
 The process for regression trees is as the following:
 
 1. We divide the predictor space into non-overlapping regions
+
 2. For every observation we that falls into one region, we make the same prediction. Simply the mean of the response values.
 
 To create the regions we simply create high-dimensional rectangles. (boxes) We seperate these boxes by minimizing the RSS. As it is impossible to find every box, we simply use recursive binary splitting. 
+
+### Tree Pruning
+
+The above process is likely to overfit the data on the test set, as the resulting fit might be too complex. A tree that is smaller leads to better variance, with a small bias. 
+
+We can obtain an "optimal" tree by growing a very large tree and then *prune* it back in order to obtain a *subtree*. 
+
+How do we determine the best way to prune the tree? Basically we want a subtree with the lowest test error rate. 
+
+Weakest link pruning (Cost complexity pruning) is a viable way to do this. 
+
+
+
+
 
 # --> Stopped at 307
