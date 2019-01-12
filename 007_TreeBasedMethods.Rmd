@@ -31,6 +31,12 @@ How do we determine the best way to prune the tree? Basically we want a subtree 
 
 Weakest link pruning (Cost complexity pruning) is a viable way to do this. 
 
+## Classification Trees
+
+Classification Trees are used to predict a qualitative response rather than a quantitative one. With a classification tree we predict that each response belongs to the most commonly occurring class. 
+
+Either the Gini index or the cross-entropy can be used for tree growing. However also the classification error rate can be used if global accuracy is needed. 
+
 
 
 
