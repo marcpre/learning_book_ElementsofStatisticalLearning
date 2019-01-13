@@ -37,7 +37,21 @@ Classification Trees are used to predict a qualitative response rather than a qu
 
 Either the Gini index or the cross-entropy can be used for tree growing. However also the classification error rate can be used if global accuracy is needed. 
 
+## Tree versus Linear Models
 
+Linear regression assums the following model:
+
+$$
+f(X) = \beta_0 + \sum^p_{j=1} X_j \beta_j
+$$
+
+Tree based models assume the following form:
+
+$$
+f(X) = \sum^M_{m=1} c_m * 1_{(X \in R_m)}
+$$
+
+Linear model works well if if features and responses are well approximated and have an underlying linear relationship. If there is a non-linear or complex relationship within the model then the decision tree might outperform the linear model. 
 
 
 
