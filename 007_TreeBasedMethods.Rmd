@@ -54,5 +54,22 @@ $$
 Linear model works well if if features and responses are well approximated and have an underlying linear relationship. If there is a non-linear or complex relationship within the model then the decision tree might outperform the linear model. 
 
 
+## Ad-/Disadvantages of Trees
 
-# --> Stopped at 307
+* Trees are easy to explain to people
+* Trees might mirror more closely human decision making
+* Trees can easily be shown graphically
+* Trees do not have the same predictive accuracy as other methods
+
+By using bagging, boosting and random forest the prediction accuracy can be substantially improved.
+
+
+
+
+
+
+
+
+
+
+# --> Stopped at 320
