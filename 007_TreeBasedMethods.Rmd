@@ -53,7 +53,6 @@ $$
 
 Linear model works well if if features and responses are well approximated and have an underlying linear relationship. If there is a non-linear or complex relationship within the model then the decision tree might outperform the linear model. 
 
-
 ## Ad-/Disadvantages of Trees
 
 * Trees are easy to explain to people
@@ -63,9 +62,17 @@ Linear model works well if if features and responses are well approximated and h
 
 By using bagging, boosting and random forest the prediction accuracy can be substantially improved.
 
+# Bagging, Random Forest and Boosting
 
+## Bagging
 
+Bootstrapping, bagging or aggregation is a general procedure to reduce the variance of a statistical learning method. 
 
+Averaging leads to low variance. Hence if we take a number of training sets and average them in order to obtain a single statistical model.
+
+As we do not usually have a number of training sets available we bootstrap and obtain predictions from each draw, then we average the predictions that we get. This method is called bagging. 
+
+In order to make bagging useful for classification we simply record the class predicted by each of the $B$ trees and take a majority vote for the overall prediction. 
 
 
 
