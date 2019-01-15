@@ -74,6 +74,14 @@ As we do not usually have a number of training sets available we bootstrap and o
 
 In order to make bagging useful for classification we simply record the class predicted by each of the $B$ trees and take a majority vote for the overall prediction. 
 
+## Out of Error Estimation (OOB)
+
+The key to bagging is to bagging is that trees are fit repeatedly to bootstrapped subsets of observations. It can be shown that on average each bagged three make 2/3 of the observations. The remaining 1/3 are called out of bag observations. 
+
+The resulting test OOB error can then be commuted similar to MSE. 
+
+
+
 
 
 
