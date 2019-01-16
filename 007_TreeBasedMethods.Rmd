@@ -80,6 +80,13 @@ The key to bagging is to bagging is that trees are fit repeatedly to bootstrappe
 
 The resulting test OOB error can then be commuted similar to MSE. 
 
+## Variable Importance Measures
+
+Using bagging can result in improved accuracy over predictors. However, the interpretation of the model is hard. 
+
+Using RSS or the Gini coefficient one can get a summary of the performance of the tree. A large value indicates an important predictor.
+
+
 
 
 
