@@ -86,8 +86,11 @@ Using bagging can result in improved accuracy over predictors. However, the inte
 
 Using RSS or the Gini coefficient one can get a summary of the performance of the tree. A large value indicates an important predictor.
 
+## Random Forest
 
+Random forest uses a small "tweak" to decorrelate the trees. We create a certain sample of trees on bootstrapped training samples. However, when building a new tree we choose to take a random sample of m predictors as a split candidate. 
 
+The implication is that in a bagged tree, the split will be at the major predictor. With random forest the split will be within a subset of predictors using a randomly choosen predictor. Hence variance decreases and accuracy also. We can think of as decorrelating the trees. 
 
 
 
