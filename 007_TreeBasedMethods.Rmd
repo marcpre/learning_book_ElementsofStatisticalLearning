@@ -92,9 +92,16 @@ Random forest uses a small "tweak" to decorrelate the trees. We create a certain
 
 The implication is that in a bagged tree, the split will be at the major predictor. With random forest the split will be within a subset of predictors using a randomly choosen predictor. Hence variance decreases and accuracy also. We can think of as decorrelating the trees. 
 
+## Boosting
+
+Boosting works similar to bagging. However, trees are grown sequentially. Each tree is grown using information from previous grown trees. Boosting allows to learn the model slow than when the data is fit on one model directly. 
+
+Boosting has three parameters:
+
+* Number of trees $B$
+* The shrinkage parameter $\lambda$
+* The number of $d$ splits in each tree
 
 
 
-
-
-# --> Stopped at 323
+# --> Stopped at 341
