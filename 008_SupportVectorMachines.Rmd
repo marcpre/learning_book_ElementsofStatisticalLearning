@@ -5,9 +5,36 @@ output: html_document
 
 # Support Vector Machines
 
+SVMs were developed in the 1990 and are often considered as the best "out-of-the-box" classifiers.
+
+## Maximal Margin Classifier
+
+### What is a hyperplane?
+
+In a p-dimensional setting a hyperplane can be defined as:
+
+$$
+\beta_0 + \beta_1X_1 + \beta_2X_2 + ... + \beta_pX_p = 0 
+$$
+
+In a two-dimensional setting a hyperplane is simply a line. 
+
+We can detemine if the above equation does not hold true, then we simply say:
+
+$$
+\beta_0 + \beta_1X_1 + \beta_2X_2 + ... + \beta_pX_p > 0
+$$
+
+$$
+\beta_0 + \beta_1X_1 + \beta_2X_2 + ... + \beta_pX_p < 0
+$$
+
+That means that the point lies simply on one or the other side of the line. 
 
 
 
 
 
-# --> Stopped at 341
+
+
+# --> Stopped at 343
