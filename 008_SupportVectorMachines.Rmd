@@ -31,10 +31,12 @@ $$
 
 That means that the point lies simply on one or the other side of the line. 
 
+### Classification Using a Separating Hyperplane
+
+We can use separating hyperplane to create a classifier to separate two classes. If a separating hyperplane exist we can use it to construct a natural classifier. Basically we asign each observation a class such as ${-1,1}$. 
+
+A class that is based on a separating hyperplane leads to a linear decision boundary.
 
 
 
-
-
-
-# --> Stopped at 343
+# --> Stopped at 345
