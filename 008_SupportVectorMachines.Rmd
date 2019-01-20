@@ -37,6 +37,19 @@ We can use separating hyperplane to create a classifier to separate two classes.
 
 A class that is based on a separating hyperplane leads to a linear decision boundary.
 
+## Maximal Margin Classifier
+
+In general if our data can be sepearated using a hyperplane, we can construct an infinite number of such hyperplanes.
+
+We must choose using a reasonable way, which hyperplane to choose. A natural choice is the maximal margine hyperplane, which is the separating hyperplane that is farthest from the training observations. 
+We basically compute the perpendicular distance from each training observation to a give hyperplane. The smallest distance is called: margin. As the next step we can then classify a test observation based on which side of the maximal margin classifier it lies. 
+
+The classifier can lead to overfitting if $p$ is large.
 
 
-# --> Stopped at 345
+
+
+
+
+
+# --> Stopped at 346
