@@ -46,10 +46,21 @@ We basically compute the perpendicular distance from each training observation t
 
 The classifier can lead to overfitting if $p$ is large.
 
+## Construction of the Maximal Margin Classifier
+
+Is basically used in ML to give an associated distance from the decision boundary for each observation. 
+
+## The Non-Separable Case
+
+What if no separating hyperplane exist. We can basically extend the hyperplane concept and use a soft margin. If we generalize the maximum margine classifier to the non-separable case it is calle support vector classifier. 
+
+# Support Vector Classifier
+
+## Overview of the Support Vector Classifier
 
 
 
 
 
 
-# --> Stopped at 346
+# --> Stopped at 347
