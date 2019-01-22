@@ -58,6 +58,14 @@ What if no separating hyperplane exist. We can basically extend the hyperplane c
 
 ## Overview of the Support Vector Classifier
 
+Sometimes it is impossible to find a classifier that fully separates the raw classes. Basically we are also happy if we find something that:
+
+* separates most of the training observatiosn
+* which brings greater robustness into the data
+
+Using the support vector classifier, we allow some observatiosn to be on the "wrong side" of the margin. 
+
+
 
 
 
