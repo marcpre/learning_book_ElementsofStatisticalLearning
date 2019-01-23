@@ -65,10 +65,12 @@ Sometimes it is impossible to find a classifier that fully separates the raw cla
 
 Using the support vector classifier, we allow some observatiosn to be on the "wrong side" of the margin. 
 
+## Support Vector Classifier
+
+The Support Vector Classifier, classifies observations depending on which side of a hyperplane it lies. The hyperplane is used to put each observations into the "right" class. However some observations may be misclassified. The parameter $C$ basically uses the margin to fit the hyperplanes between the observations. 
 
 
 
 
 
-
-# --> Stopped at 347
+# --> Stopped at 349
