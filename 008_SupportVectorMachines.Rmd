@@ -69,8 +69,19 @@ Using the support vector classifier, we allow some observatiosn to be on the "wr
 
 The Support Vector Classifier, classifies observations depending on which side of a hyperplane it lies. The hyperplane is used to put each observations into the "right" class. However some observations may be misclassified. The parameter $C$ basically uses the margin to fit the hyperplanes between the observations. 
 
+# Support vector machines
+
+## Classification with non-linear decision boundaries
+
+Performance of linear models can suffer if there is a non-linear relationship between the predictors and the outcome. We can address this problem by either using quadratic or even higher cubic - polynomial - functions. 
+
+## Support Vector Machine
+
+SVM is an extension of the Support Vector Classifier. It enlarges the feature space using kernels. What is the advantage of using a kernel instead of enlarging the feature space? Basic answer is computation. For example, for the radial kerne the featuer space is infinit, so we cannot finish computation anyway. 
 
 
 
 
-# --> Stopped at 349
+
+
+# --> Stopped at 368
