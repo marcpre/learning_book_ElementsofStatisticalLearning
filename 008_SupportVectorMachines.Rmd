@@ -79,9 +79,21 @@ Performance of linear models can suffer if there is a non-linear relationship be
 
 SVM is an extension of the Support Vector Classifier. It enlarges the feature space using kernels. What is the advantage of using a kernel instead of enlarging the feature space? Basic answer is computation. For example, for the radial kerne the featuer space is infinit, so we cannot finish computation anyway. 
 
+# SVMs with more than two classes
+
+There are a lot of proposals to the K-class SVM that have been made, however two are most popular: one-versus-one and one-versus-all.
+
+## One-Versus-One Classification
+
+Suppose that we would like to do classification using SVMs on $K > 2$ classes. A one-versus-one approach constructs $K \choose 2$. This SVM compares the $k'th$ class, coded as $+1$, to the $k'th$ class, coded as $-1$.
+
+## One-Versus-All Classification
+
+Basically we fit an SVM to the $K$ classes to the remaining $K-1$ classes. We basically assign the highest prediction to a class as this amount to a high level of confidence that the test observation belongs to the $k'th$ class
 
 
 
 
 
-# --> Stopped at 368
+
+# --> Stopped at 360
