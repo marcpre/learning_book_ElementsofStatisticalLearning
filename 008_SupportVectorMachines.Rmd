@@ -91,6 +91,15 @@ Suppose that we would like to do classification using SVMs on $K > 2$ classes. A
 
 Basically we fit an SVM to the $K$ classes to the remaining $K-1$ classes. We basically assign the highest prediction to a class as this amount to a high level of confidence that the test observation belongs to the $k'th$ class
 
+# Relationship to Logistic Regression
+
+When classes are well separated SVMs tend to  perform better than logistic regression. When classes overlap, logistic regression is preferred.
+
+The tuning parameter $C$ is extremely important for SVM in order to determine if the model under-/overfits.
+
+
+
+
 
 
 
