@@ -1,0 +1,15 @@
+---
+title: "010_UnsupervisedLearning"
+output: html_document
+---
+
+# Unsupervised Learning
+
+With unsupervised learning we only have a set of features $X_1, X_2, ... ,X_p$ measured on $n$ observations. The goal is to discover interesting things about the measurements. 
+
+## The Challenge of Unsupervised Learning
+
+Unsupervised Learning is often performed as part of an exploratory data analysis. However, it is hard how good our data is responding to the model. 
+
+
+# --> Stopped at 378
