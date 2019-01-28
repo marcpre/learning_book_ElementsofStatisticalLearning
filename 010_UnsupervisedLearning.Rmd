@@ -11,5 +11,25 @@ With unsupervised learning we only have a set of features $X_1, X_2, ... ,X_p$ m
 
 Unsupervised Learning is often performed as part of an exploratory data analysis. However, it is hard how good our data is responding to the model. 
 
+## Principal Component Analysis (PCA)
 
-# --> Stopped at 378
+When having a large dataset, PCA allows us  to summarize the variables into smaller, that explain most of the variability in the original set. PCA refers to the process of where principal components are computed and the subsequent use of these components in understanding the data. 
+
+### What are principle components
+
+Suppose that we want to visualize $n$ observations with measurements on a set of $p$ features. We could use a scatterplot, however there are $p \choose 2$ such scatterplots. Hence, a better approach is to only get for $n$ observations where $p$ is the largest. 
+
+PCA provides a tool to find a low-dimensional representation of the data set, where as much information is captured. 
+
+The first principal component is the normalized linear combination of the features that has the largest variance. 
+
+Geometrically we project the original data down onto the subspace spanned by the principal components and plotting the projected points. 
+ 
+ 
+ 
+ 
+ 
+
+
+
+# --> Stopped at 383
