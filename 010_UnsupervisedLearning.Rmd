@@ -25,11 +25,25 @@ The first principal component is the normalized linear combination of the featur
 
 Geometrically we project the original data down onto the subspace spanned by the principal components and plotting the projected points. 
  
+## Another interpretation of PCA
+
+Basically we want to find a dimension that lies as close as possible to all of the data points. The reason is that such a dimension will provide a good summary of the data.
  
+## More on PCA
+
+### Scaling the variables
  
- 
- 
+When performing PCA, the variables should be centered by mean $0$. Typically we scale each variable with a Standartdeviation of $1$ before performing PCA. 
+
+### Uniqueness of the Principal Components
+
+Eah principal component vector is unique up to a sign flip. 
+
+### The Proportion of Variance Explained
+
+After performing PCA, we can ask the question: How much information in a given data set is lost by projecting the observations onto the first few principal components? Basically, we are interested in knowing the proportion of variance explained (PVE). 
 
 
 
-# --> Stopped at 383
+
+# --> Stopped at 387
