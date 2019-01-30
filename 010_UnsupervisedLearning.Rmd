@@ -43,7 +43,22 @@ Eah principal component vector is unique up to a sign flip.
 
 After performing PCA, we can ask the question: How much information in a given data set is lost by projecting the observations onto the first few principal components? Basically, we are interested in knowing the proportion of variance explained (PVE). 
 
+### Deciding how many principal components to use
+
+How many principal components are needed? We typically decide on the number of principal components by examining a scree plot. If in the scree plot the proportion of variance explianed drops of, we refer to this as elbow. 
+
+However this question is ill defined as there is no right answer how many prinicpal components are enough. If no clear pattern is found in the first view principal components it the decision of the data scientist to use more.
+
+### Other Uses for Principal Components
+
+Many statistical techniques can use principal components as based features to create a model on top of it.
 
 
 
-# --> Stopped at 387
+
+
+
+
+
+
+# --> Stopped at 389
