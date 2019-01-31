@@ -54,6 +54,14 @@ However this question is ill defined as there is no right answer how many prinic
 Many statistical techniques can use principal components as based features to create a model on top of it.
 
 
+# Clustering Methods
+
+Clustering refers to techniques to find subgroups or clusters in a data set. We basically want to join similar groups together and leave different groups out. Teh difference between PCA and clustering is the following:
+
+* PCA tries to find low-dinemsional representations that explain a good fraction of the variance
+
+* Clustering tries to find subgroups
+
 
 
 
