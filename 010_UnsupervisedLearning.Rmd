@@ -63,10 +63,24 @@ Clustering refers to techniques to find subgroups or clusters in a data set. We 
 * Clustering tries to find subgroups
 
 
+## K-Means Clustering
+
+K-Means Clustering is a simple and elegant approach for partitioning a dataset into $K$ distinct, non-overlapping clusters. To perform the algorithm we basically specify the desired number of clusters. 
+
+The idea of K-means clustering is that the within-cluster variation is as small as possible. We basically want to minimize the amount by which the observations within a cluster differ from each other. We basically can use the common euclidian distance. 
+
+The algorithm runs as following:
+
+1. Assign anumber - from 1 to K - to each of the observations.
+
+2. Iterate:
+
+2.1 For each of the $K$ clusters, compute the centroiod. Centroid: is the vector of the $p$ feature means for the observation in the kth cluster
+
+2.2 Asign each observation to the cluster whose centroid is closest.
 
 
 
 
 
-
-# --> Stopped at 389
+# --> Stopped at 390
