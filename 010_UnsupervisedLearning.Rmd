@@ -75,12 +75,18 @@ The algorithm runs as following:
 
 2. Iterate:
 
-2.1 For each of the $K$ clusters, compute the centroiod. Centroid: is the vector of the $p$ feature means for the observation in the kth cluster
+  2.1 For each of the $K$ clusters, compute the centroiod. Centroid: is the vector of the $p$ feature means for the observation in the kth cluster
 
-2.2 Asign each observation to the cluster whose centroid is closest.
-
-
+  2.2 Asign each observation to the cluster whose centroid is closest.
 
 
+## Hierachical Clustering
 
-# --> Stopped at 390
+One potential disadvantage of K-Means Clustering is that it requires us to pre-specify the number of clusters $K$.
+
+### Interpretation of a Dendrogram
+
+Observations that fuse together at the bottom of the tree are quite similar and observations that fuse together at the top are will tend to be quite different. Conclusions about the similarity of an observation can be made when looking at the vertical axis of a dendrogram. 
+
+
+# --> Stopped at 393
