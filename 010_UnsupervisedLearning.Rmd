@@ -88,5 +88,16 @@ One potential disadvantage of K-Means Clustering is that it requires us to pre-s
 
 Observations that fuse together at the bottom of the tree are quite similar and observations that fuse together at the top are will tend to be quite different. Conclusions about the similarity of an observation can be made when looking at the vertical axis of a dendrogram. 
 
+### The Hierarchical Clustering Algorithm
 
-# --> Stopped at 393
+We define some sort of dissimilarity measure - such as euclidian measure - between each pair of observations. 
+
+Linkage defines dissimilarity between a pair of groups of observations. There are 4 common types: complete, average, single and centroid. Average and complete are generally preferred by statisticians. Centroid has a major drawback as inversion - two clusters are fused at a height below either of te individual clusters in the dendrogram. 
+
+
+
+
+
+
+
+# --> Stopped at 402
