@@ -94,10 +94,39 @@ We define some sort of dissimilarity measure - such as euclidian measure - betwe
 
 Linkage defines dissimilarity between a pair of groups of observations. There are 4 common types: complete, average, single and centroid. Average and complete are generally preferred by statisticians. Centroid has a major drawback as inversion - two clusters are fused at a height below either of te individual clusters in the dendrogram. 
 
+### Choice of dissimilarity measure
+
+Usually euclidian distance is used as dissimilarity measure. However, we can also choose correlation-based dissimilarity: It is considered similar if two observations are highly correlated. 
+
+### Practical issues in clustering
+
+#### Small Decisions with Big Consequences
+
+Before we cluster the following decisions have to be made:
+
+  1. Should the observations be standartized?
+  2. In the case of hierachical clustering:
+  2.1 What dissimilarity measure should be used?
+  2.2 What type of linkage should be used?
+  2.3 Where should the dendrogram be cut, in order to obtain the clusters?
+  3. In case of K-Means, how many clusters should we look for?
+
+#### Validating the clusters obtained
+
+When we do clustering, we will definitely find clusters. We can support this via p-values. There is no single **best** way for this yet. 
+
+#### Other considerations in clustering
+
+Outliers are handled quite bad by K-Means. Therefore, mixure models are a good way to handle this. There is also a version of soft K-Means clustering. 
+
+#### Interpreting Clustering results
+
+* Play with the parameters to see which patterns arise from the data
+* Cluster only a subset to get a sense of the robustness
 
 
 
 
 
 
-# --> Stopped at 402
+# --> Stopped at 440
